@@ -1,0 +1,24 @@
+{
+    "name": "injurys/oauth",
+    "description": "第三方授权登陆 QQ登陆 新浪微博登陆 github登陆",
+    "type": "library",
+    "homepage": "http://www.hug-code.cn/",
+    "minimum-stability":"stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "injurys",
+            "email": "1762910894@qq.com",
+            "homepage": "http://www.hug-code.cn/"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "injurys/tool-box": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "injurys\\oauth\\": "src"
+        }
+    }
+}
