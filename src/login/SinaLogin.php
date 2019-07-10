@@ -7,10 +7,10 @@
  * @Date: 2019/7/7 8:23
  */
 
-namespace injurys\src\oauth;
+namespace third\oauth\login;
 
 use injurys\tools\HttpRequest;
-use injurys\oauth\Exception\MessageException;
+use third\oauth\Exception\MessageException;
 
 class SinaLogin extends Base
 {
@@ -29,8 +29,11 @@ class SinaLogin extends Base
     }
 
     /**
-     * 获取 access_token
+     * @description: 获取 access_token
      * @return mixed
+     * @throws MessageException
+     * @author: injurys
+     * @updater:
      */
     public function getAccessToken()
     {
@@ -54,9 +57,12 @@ class SinaLogin extends Base
     }
 
     /**
-     * 获取用户信息
+     * @description:  获取用户信息
      * @param array $access_token
      * @return mixed
+     * @throws MessageException
+     * @author: injurys
+     * @updater:
      */
     public function getUserInfo($access_token=[])
     {

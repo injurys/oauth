@@ -1,5 +1,5 @@
 <?php
-namespace injurys\src\oauth;
+namespace third\oauth\login;
 
 class Base
 {
@@ -7,7 +7,6 @@ class Base
     public $client_id;         //App ID
     public $client_secret;     //APP KEY
     public $redirect_uri;      //回调地址
-
 
 
 }
