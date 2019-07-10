@@ -6,7 +6,7 @@
  * @Date: 2019/6/21 9:39
  */
 
-namespace third\oauth\Exception;
+namespace injurys\third\Exception;
 
 use Exception;
 

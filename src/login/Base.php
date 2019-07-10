@@ -1,5 +1,5 @@
 <?php
-namespace third\oauth\login;
+namespace injurys\third\login;
 
 class Base
 {

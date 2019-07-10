@@ -6,7 +6,7 @@
  * @Date: 2019/6/21 9:44
  */
 
-namespace third\oauth\Exception;
+namespace injurys\third\Exception;
 
 
 class MessageException extends DingTalkCloudException

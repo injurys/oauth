@@ -7,7 +7,7 @@
  * @Date: 2019/7/7 8:23
  */
 
-namespace third\oauth\login;
+namespace injurys\third\login;
 
 use injurys\tools\HttpRequest;
 use third\oauth\Exception\MessageException;
