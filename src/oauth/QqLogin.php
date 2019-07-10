@@ -7,7 +7,7 @@
  * @Date: 2019/7/7 8:23
  */
 
-namespace injurys\oauth\oauth;
+namespace injurys\src\oauth;
 
 use injurys\tools\HttpRequest;
 use injurys\oauth\Exception\MessageException;

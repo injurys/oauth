@@ -1,5 +1,5 @@
 <?php
-namespace injurys\oauth\oauth;
+namespace injurys\src\oauth;
 
 class Base
 {

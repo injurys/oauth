@@ -6,7 +6,7 @@
  * @Date: 2019/6/21 9:39
  */
 
-namespace DingTalk\src\Exception;
+namespace injurys\oauth\Exception;
 
 use Exception;
 
