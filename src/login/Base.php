@@ -8,5 +8,4 @@ class Base
     public $client_secret;     //APP KEY
     public $redirect_uri;      //回调地址
 
-
 }

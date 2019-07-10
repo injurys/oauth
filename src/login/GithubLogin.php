@@ -10,7 +10,7 @@
 namespace injurys\third\login;
 
 use injurys\tools\HttpRequest;
-use third\oauth\Exception\MessageException;
+use injurys\third\Exception\MessageException;
 
 class GithubLogin extends Base
 {
