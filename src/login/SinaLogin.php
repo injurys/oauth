@@ -58,27 +58,27 @@ class SinaLogin extends Base
 
     /**
      * @description:  获取用户信息
-     * @param array $access_token
+     * @param array $info
      * @return mixed
      * @throws MessageException
      * @author: injurys
      * @updater:
      */
-    public function getUserInfo($access_token=[])
+    public function getUserInfo($info=[])
     {
-        if(!isset($result['access_token']))
+        if(!isset($info['access_token']))
             throw new MessageException('缺少主要参数：access_token', 400);
 
-        if(empty($result['uid']) && empty($result['screen_name']))
+        if(empty($info['uid']) && empty($info['screen_name']))
             throw new MessageException('uid 与 screen_name最少要有一个参数', 400);
 
         $data = [
-            'access_token'=>$access_token['access_token'],
+            'access_token'=>$info['access_token'],
         ];
-        if(!empty($result['uid']))
-            $date['uid'] = $access_token['uid'];
+        if(!empty($info['uid']))
+            $data['uid'] = $info['uid'];
         elseif(!empty($result['screen_name']))
-            $date['screen_name'] = $access_token['screen_name'];
+            $data['screen_name'] = $info['screen_name'];
 
         $url = 'https://api.weibo.com/2/users/show.json';
         $result = json_decode(HttpRequest::get($url, $data), true);
@@ -100,6 +100,5 @@ class SinaLogin extends Base
             return $e->getMessage();
         }
     }
-
 
 }

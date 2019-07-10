@@ -64,11 +64,12 @@ class GithubLogin extends Base
     {
         if(empty($access_token))
             throw new MessageException('缺少主要参数：access_token', 400);
+
         $url = "https://api.github.com/user?access_token=".$access_token;
         $headers = [
             'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
         ];
-        $result = json_decode(Tool::get($url, [], $headers), true);
+        $result = json_decode(HttpRequest::get($url, [], $headers), true);
         return $result;
     }
 

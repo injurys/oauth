@@ -111,7 +111,7 @@ class QqLogin extends Base
         if($result['ret'] != 0)
             throw new MessageException($result['msg'], 400);
 
-        return array_merge($result, $data);
+        return array_merge($result, $info);
     }
 
 
@@ -125,8 +125,8 @@ class QqLogin extends Base
     {
         try{
             $access_token = $this->getAccessToken();
-            $indo = $this->getOpenid($access_token);
-            return $this->getUserInfo($indo);
+            $info = $this->getOpenid($access_token);
+            return $this->getUserInfo($info);
         }catch (MessageException $e){
             return $e->getMessage();
         }
