@@ -5,7 +5,9 @@ composer require injurys/oauth
 ``` 
 ### Github 授权登陆
 github API地址：https://developer.github.com/
+
 登陆流程：http://www.hug-code.cn/article/1070.shtml
+
 ``` php
 // 定义配置文件
 $config = [
@@ -28,7 +30,9 @@ try{
 
 ### 新浪微博 授权登陆
 新浪微博开放平台: https://open.weibo.com/
+
 登陆流程：http://www.hug-code.cn/article/1081.shtml
+
 ``` php
 // 定义配置文件
 $config = [
@@ -52,7 +56,9 @@ try{
 
 ### QQ 授权登陆
 QQ 互联地址：https://connect.qq.com/index.html
+
 登陆流程：http://www.hug-code.cn/article/1076.shtml
+
 ``` php
 // 定义配置文件
 $config = [
